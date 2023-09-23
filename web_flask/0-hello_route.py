@@ -5,7 +5,7 @@ script starts Flask web app
     routes: /: display "Hello HBNB!"
 """
 
-from flask import flask
+from flask import Flask
 
 app = Flask(__name__)
 
