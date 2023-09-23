@@ -28,7 +28,7 @@ def c(text):
     return 'C {}'.format(text.replace("_", " "))
 
 
-@app.route('/c/<text>', strict_slashes=False)
+@app.route('/python/<text>', strict_slashes=False)
 def python(text='is cool'):
     """display custom text given"""
     return 'Python {}'.format(text.replace("_", " "))
