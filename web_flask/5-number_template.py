@@ -42,8 +42,8 @@ def number(n):
     return '{} is a number'.format(n)
 
 
-@app.route('/number_template/<n>', strict_slashes=False)
-def number(n):
+@app.route('/number_template/<int:n>', strict_slashes=False)
+def number_html(n):
     """display custom text given"""
     return render_template('5-number.html', n=n)
 
