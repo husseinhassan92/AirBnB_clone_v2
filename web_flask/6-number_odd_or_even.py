@@ -51,7 +51,7 @@ def number_html(n):
 @app.route('/number_odd_or_even/<int:n>', strict_slashes=False)
 def number_even_odd(n):
     """display custom text given"""
-    return render_template('number_odd_or_even', n=n)
+    return render_template('6-number_odd_or_even.html', n=n)
 
 
 if __name__ == "__main__":
